@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Futbol takimi</title>
+
+    <link rel="stylesheet" href="Futbol-takim.css">
+    <link rel="stylesheet" href="Hali-saha.css">
+    <link rel="stylesheet" href="Player.css">
+
+</head>
+
+<body>
+    <div id="image-div">
+    </div><!-- images-div -->
+
+    <div id="user-input">
+        <div class="name-username">
+            <input id="name" placeholder="Oyuncu adı" type="Text">
+            <input id="surname" placeholder="Oyuncu soyadı" type="Text">
+        </div><!-- name-username -->
+
+        <div class="team-position">
+            <select id="first-position">
+                <option value="kale">Kale</option>
+                <option value="defans">Defans</option>
+                <option value="orta-saha">Orta saha</option>
+                <option value="forvet">Forvet</option>
+            </select>
+
+            <select id="second-position">
+                <option value="kale">Kale</option>
+                <option value="defans">Defans</option>
+                <option value="orta-saha">Orta saha</option>
+                <option value="forvet">Forvet</option>
+            </select>
+        </div><!-- team-position -->
+
+        <div class="phone-number">
+            <input type="tel" placeholder="Telefon numarası" id="phone-number">
+        </div><!-- phone-number -->
+
+        <div class="create-delete-div">
+            <button id="create-player">Oyuncu oluştur</button>
+            <button id="delete-player">Oyuncu sil</button>
+        </div><!-- create-delete-div -->
+        <div class="create-delete-div">
+            <button class="saveButton">Kaydet</button>
+            <button class="resetButton">Sıfırla</button>
+        </div>
+        
+    </div><!-- user input -->
+    <div class="player-array"></div>
+
+    <p id="sign">Made by Findikmaksim</p>
+    <script src="Futbol-takim.js"></script>
+</body>
+
+</html>

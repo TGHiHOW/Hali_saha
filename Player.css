@@ -1,0 +1,49 @@
+.player-div {
+  display: flex;
+  align-items: stretch;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px; /* Mobil ve PC için dengeli genişlik */
+  height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: inherit;
+  cursor: grab;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none; /* Mobilde parmakla taşımak için kritik */
+  z-index: 10;
+  transition: transform 0.1s ease;
+}
+
+.player-div:active {
+  cursor: grabbing;
+  transform: scale(1.03); /* Taşırken hafif büyüme efekti */
+}
+
+.player-left {
+  flex: 0 0 12%;
+  height: 100%;
+}
+
+.player-right {
+  flex: 0 0 12%;
+  height: 100%;
+}
+
+.player-medium {
+  flex: 0 0 76%;
+  height: 100%;
+  background-color: #ffffff; /* Temiz ve okunaklı beyaz zemin */
+  color: #1a202c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0 4px;
+  text-align: center;
+  pointer-events: none;
+}
